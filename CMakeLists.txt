@@ -187,7 +187,7 @@ macro(spirv_cross_add_library name config_name library_type)
 		endif()
 	endif()
 
-	if (NOT SPIRV_CROSS_SKIP_INSTALL)
+        if (OFF)
 		install(TARGETS ${name}
 			EXPORT ${config_name}Config
 			RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
